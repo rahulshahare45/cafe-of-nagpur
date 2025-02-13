@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farzi Cafe</title>
+    <link rel="stylesheet" href="loc.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>LOC Cafe</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+       
+            <div class="menu-items">
+                <!-- Menu Items -->
+                <div class="menu-item">
+                    <img src="loc1.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="loc2.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="loc3.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="loc4.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="loc5.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="loc6.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="loc7.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="loc8.jpg" alt="Classic Coffee">
+                      </div>
+                <div class="menu-item">
+                    <img src="loc9.jpg" alt="Classic Coffee">
+                      </div>
+                
+            </div>
+        </div>
+        
+    </section>
+    <!-- Menu Section -->
+    <h2 style="color: black;text-align: center; font-size: 50px;">Our Special Menu</h2><hr><hr>
+    <div style="height: 700px;" class="menu-container">
+    <!-- Menu cards -->
+    <div style="border: 4px solid black;width: 500px; height: 500px;"class="menu-card" onclick="openPopup(this)">
+        <img src="locmenu1.jpg" alt="Card 1">
+    </div>
+    <div style="border: 4px solid black; width: 500px; height: 500px;"class="menu-card" onclick="openPopup(this)">
+        <img src="locmenu2.jpg" alt="Card 2">
+    </div>
+</div>
+
+<!-- Popup Modal -->
+<div class="popup-modal" id="popup-modal">
+    <button class="close-btn" onclick="closePopup()">×</button>
+    <img id="popup-img" src="" alt="Popup Image">
+</div>
+
+<script>
+    // Function to open the popup
+    function openPopup(card) {
+        // Get the image source from the clicked card
+        var imageSrc = card.querySelector('img').src;
+        // Set the popup image source
+        document.getElementById("popup-img").src = imageSrc;
+        // Display the popup modal
+        document.getElementById("popup-modal").style.display = "flex";
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById("popup-modal").style.display = "none";
+    }
+</script>
+
+
+<hr>
+    <hr>
+      <!-- About us -->
+<section class="about-section1" style="color: black; text-align: center;  background-color: #d9b346;" >
+    <div class="container1"style="width: 100%; height: 300px;">
+        <h2 style="font-size: 36px; text-decoration: underline ;"> About Us!....</h2>
+        <p style="font-size: 22px;">
+            Life of Chai (LOC) is a popular café chain in Nagpur, established in January 2019 with its first outlet at Manewada Square. Over the years, it has expanded to over 25 branches across Nagpur and Vidarbha, serving thousands of customers daily. LOC offers a youthful ambiance, authentic flavors, and a pocket-friendly menu, making it a favored hangout spot for tea enthusiasts. The café emphasizes community building, providing a space where people can connect and enjoy a variety of teas and snacks. Additionally, LOC supports local vendors and encourages young entrepreneurs, reflecting its commitment to the local community  
+        </p>
+      
+
+      
+
+    </div>
+</section>
+<hr>
+<hr>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h2>☕ Nagpur's Best Café</h2>
+                <p>Experience the taste of freshly brewed coffee and delicious bites in the heart of Nagpur.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-contact">
+                <h2>Contact Us</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Nagpur, Maharashtra</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@nagpurcafe.com</p>
+                
+                <form class="newsletter">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="follow-us">
+            <h2>Follow Us</h2>
+            <a href="https://www.instagram.com/loc_laxminagar_nagpur" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+                <img src="image.png" alt="" height="30px">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Nagpur's Best Café | Designed with ❤️</p>
+        </div>
+    </footer>
+
+</body>
+</html>
